@@ -46,7 +46,7 @@ function printMap(r) {
   let ifrm = document.createElement("iframe");
   ifrm.setAttribute(
     "src",
-    `https://www.google.com/maps/embed?pb=!1m14!1m12!1m4!1d3172.1368882059437!2d${lon}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1658421521167!5m2!1ses!2spe`
+    `https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3172.1368882059437!2d${lon}!3d${lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1658421521167!5m2!1ses!2spe`
   );
   boxMap.innerHTML = "";
   boxMap.appendChild(ifrm);
