@@ -1,0 +1,193 @@
+:root {
+  --primary-color: #0b0f1d;
+  --secondary-color: #42ffe0;
+  --tertiary-color: #171e31;
+  --quaternary-color: #121621;
+  --quinary-color: #fff;
+  --senary-color: #65a3fb;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+  background: var(--primary-color);
+  height: 100vh;
+}
+.wrapper .container__nav {
+  width: 100%;
+  margin: auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none;
+}
+.wrapper .container__nav .container__nav--nav {
+  font-family: helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #5600f5;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 100px;
+  margin: auto;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.wrapper .container__nav .container__nav--nav form {
+  display: flex;
+}
+.wrapper .container__nav .container__nav--nav form input {
+  width: 250px;
+  height: 20px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: none;
+  align-self: center;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.9);
+}
+.wrapper .container__nav .container__nav--nav header {
+  display: flex;
+}
+.wrapper .container__nav .container__nav--nav header .nav__logo {
+  width: 130px;
+  margin: auto;
+}
+.wrapper .container__nav .container__nav--nav ul {
+  list-style: none;
+  padding: 4px;
+  box-sizing: border-box;
+  background: #5600f5;
+  color: #ffffff;
+  border-radius: 10px;
+  align-self: center;
+}
+.wrapper .container__nav .container__nav--nav ul li {
+  display: flex;
+  margin: 0 5px;
+}
+.wrapper .container__nav .container__nav--nav ul a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 22px;
+  align-self: center;
+  padding: 7px;
+}
+.wrapper .container__main {
+  width: 100%;
+  max-width: 900px;
+  max-height: 850px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  padding: 30px 10px;
+}
+.wrapper .container__main .container__Course {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.wrapper .container__main .left {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.wrapper .container__main .left .container__cards .card__item .card__logo {
+  position: inherit;
+  top: -43px;
+}
+.card__img-container {
+  width: 100%;
+  position: relative;
+  color: var(--quinary-color);
+  display: flex;
+  justify-content: space-between;
+}
+.card__img-container h2 {
+  color: var(--quinary-color);
+  font-size: 30px;
+}
+
+.wrapper .container__main .right {
+  width: 100%;
+}
+.wrapper .container__main .right iframe {
+  border-radius: 0 20px 20px 0;
+  height: 500px;
+  width: 100%;
+  border: none;
+}
+.wrapper .container__main .right .list__item {
+  padding-right: 5px;
+  overflow-y: scroll;
+}
+.container__cards {
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+.container__cards .card__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 570px;
+  height: 500px;
+  transition: 0.5s;
+  position: relative;
+  border-radius: 20px 0 0 20px;
+  background: var(--quaternary-color);
+}
+.container__cards .card__item:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+}
+.container__cards .card__item iframe {
+  margin-bottom: 15px;
+}
+.container__cards .card__item .card__text-container h2 {
+  color: #ffffff;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+@media (max-width: 479px) {
+  .wrapper .container__nav .container__nav--nav header .nav__logo {
+    width: 120px;
+  }
+  .left {
+    width: 100% !important;
+  }
+  .right {
+    display: none !important;
+  }
+}
+.wrapper footer {
+  width: 100%;
+  position: fixed;
+  bottom: 20px;
+  box-sizing: border-box;
+}
+.wrapper footer .footer-box {
+  width: 900px;
+  margin: auto;
+  text-align: center;
+  color: var(--quinary-color);
+}
+.wrapper footer .footer-box p a {
+  text-decoration: none;
+  color: var(--senary-color);
+}
